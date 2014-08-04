@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Data</title>
+</head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(function(){
+		$('#target').data('hoge',2);
+		var hoge = $('#target').data('hoge');
+		$('#target').text(hoge);
+	});
+</script>
+<body>
+	<div id="target"></div>
+</body>
+</html>
