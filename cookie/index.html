@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookieの利用</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script>
+	$(function(){
+		//cookieの保存
+		$.cookie("KEY","VALUE",{expires:7});
+
+		//cookieの習得
+		console.log($.cookie("KEY"));
+
+		//cookieの削除
+		$.cookie('KEY',null);
+		console.log($.cookie('KEY'));
+	});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
