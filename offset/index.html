@@ -6,9 +6,23 @@
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <script>
-	
+	$(function(){
+		var offset = $("#boxB");
+		$("#result").html("left: " + offset.left +", top:"+offset.top);
+	});
 </script>
+<style>
+	*{margin: 0;padding: 0;}
+	[id^=box]{
+		width: 100px;
+		height: 100px;
+		background-color: lightpink;
+		margin-bottom: 10px;
+	}
+</style>
 <body>
-	
+	<div id="boxA">BoxA</div>
+	<div id="boxB">BoxB</div>
+	<div id="result">BoxBのoffset表示</div>
 </body>
 </html>
