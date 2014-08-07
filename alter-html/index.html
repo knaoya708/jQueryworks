@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML変更</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<script>
+	$( ".sample1" ).text( "<p>test</p>" );
+	$( ".sample1" ).append( "<p>append</p>" );
+	$( ".sample1" ).prepend( "<p>prepend</p>" );
+	$("<p>appendTo</p>").appendTo('.sample2');
+	$("<p>prependTo</p>").prependTo('.sample2');
+	$( ".sample3" ).after( "<p>after</p>" );
+	$( ".sample3" ).before( "<p>before</p>" );
+	$( ".sample4" ).wrap( "<div class='wrap'></div>" );
+	$( ".sample5" ).wrapAll( "<div class='wrap2'></div>" );
+	$( ".sample6" ).wrapInner( "<div class='wrap3'></div>" );
+</script>
+<style>
+	.wrap{
+		text-decoration: underline;
+	}
+	.wrap2{
+		font-weight: bold;
+	}
+	.wrap2{
+		color: red;
+	}
+</style>
+<body>
+	<div class="sample1"></div>
+	<div class="sample2"></div>
+	<div class="sample3"></div>
+	<p class="sample4">sample4</p>
+	<div class="sample5">sample5-1</div>
+	<div class="sample5">sample5-2</div>
+	<div class="sample6">sample6-1</div>
+	<div class="sample6">sample6-2</div>
+</body>
+</html>
