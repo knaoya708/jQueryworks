@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Load</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<script>
+	$(function(){
+		$("#ifrm").load(function(){
+			alert("yahooサイトのロードが完了しました！");
+		});
+	});
+</script>
+<body>
+	<iframe src="http://yahoo.co.jp" frameborder="0" width="500" height="300" id="ifrm"></iframe>
+</body>
+</html>
