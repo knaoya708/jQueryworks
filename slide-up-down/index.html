@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>jQueryスライドアップ・スライドダウン</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<style>
+	#slide{
+		width: 100px;
+		height: 100px;
+		background: #F00;
+	}
+</style>
+<body>
+	<p><input id="slideup" type="button" value="スライドイン"></p>
+	<p><input id="slidedown" type="button" value="スライドダウン"></p>
+	<div id="slide"></div>
+	<script>
+	$(function(){
+		$("#slideup").click(function(){
+			$("#slide").slideUp("slow");
+		});
+		$("#slidedown").click(function(){
+			$("#slide").slideDown("fast");
+		});
+	});
+	</script>
+</body>
+</html>
