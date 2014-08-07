@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>フォームフィルタ</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<script>
+	$(function(){
+		$("#input :input").css("background", "yellow");
+		$("#button :button").css("background", "yellow");
+		$("#checkbox :checkbox").css("background", "yellow");
+		$("#checked :checked").css("background", "yellow");
+		$("#disabled :disabled").css("background", "yellow");
+		$("#enabled :enabled").css("background", "yellow");
+		$("#file :file").css("background", "yellow"); 
+		$("#image :image").css("background", "yellow");
+		$("#password :password").css("background", "yellow");
+		$("#radio :radio").css("background", "yellow");
+		$("#reset :reset").css("background", "yellow"); 
+		$("#selected option:selected").css("background", "yellow");     
+		$("#submit input:submit").css("background", "yellow"); 
+		$("#text :text").css("background", "yellow");
+	});
+</script>
+<body>
+	<div id="input">
+		<form action="#">
+			<input type="button" value="Input Button">Button<br>
+			<input type="checkbox" checked="checked"><label>checkbox</label><br>
+			<input type="file" disabled="disabled">file<br>
+			<input type="hidden">hidden<br>
+			<input type="image">image<br>
+			<input type="password">password<br>
+			<input type="radio"><label>radio</label><br>
+			<input type="reset">reset<br><br>
+			<input type="submit" disabled="disabled">submit
+			<input type="text">text<br>
+			<select><option>Option</option></select><br>
+			<textarea>textarea</textarea><br>
+			<button>Button</button><br>
+		</form>
+	</div>
+</body>
+</html>
