@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<title>bind</title>
@@ -7,10 +7,12 @@
 </head>
 <script>
 	$(function(){
-		$
+		$("p").bind("click", function(){
+			alert($(this).text());
+		});
 	});
 </script>
 <body>
-	
+	<p>ここをクリックしてください</p>
 </body>
 </html>
